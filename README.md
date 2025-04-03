@@ -1,9 +1,13 @@
-# **GRUPO X:** Título do Jogo
+<div align = "center">
+  ![logo](https://github.com/user-attachments/assets/853fc15d-f8d2-4872-9fc1-180ff4f5904b)
+</div>
+
+# **GRUPO B:** Death's Wish
 Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Desenvolvimento de Jogos Digitais (CC7140) do curso de Ciência da Computação, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
 
 ## Componentes do Grupo
 
-- Nome Componente 1
+- Pedro Munhoz Rosin
 - Nome Componente 2
 - Nome Componente 3
 - Nome Componente 4
