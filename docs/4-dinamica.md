@@ -23,3 +23,11 @@ As escolhas do jogador impactarão a jogabilidade de diferentes formas:
 - Ambíguo: Algumas decisões não terão um impacto imediato claro, mantendo a incerteza sobre o que pode acontecer.
 - Dois gumes: Algumas ações podem ter benefícios e desvantagens simultaneamente, como pegar um artefato, mas ativar armadilhas.
 - Novela: A história se desenrola com base nas ações do jogador.
+
+Orientação direta 
+- Diálogos com a Morte: A Morte será um guia inicial, explicando o desafio a Jean e fornecendo instruções básicas sobre sua jornada. Este diálogo inicial funcionará como um tutorial disfarçado, introduzindo o jogador ao objetivo principal do jogo.
+- Tutoriais Embutidos no Jogo: Durante o avanço de Jean, o jogo apresentará tutoriais através de interações diretas com o ambiente. Por exemplo, ao tentar pular pela primeira vez, um pequeno texto pode surgir na tela informando a tecla necessária. Além disso, eventos guiados, como um inimigo fácil logo no início, incentivarão o jogador a aprender os comandos de ataque e movimentação.
+
+Orientação indirera 
+- Level Design e Elementos Visuais: O próprio design dos cenários incentivará a exploração e mostrará o caminho correto de maneira intuitiva. Por exemplo, plataformas e elementos interativos podem ser destacados com uma iluminação sutil ou posicionados de forma que instiguem o jogador a segui-los. No Egito Antigo, por exemplo, areia movediça e armadilhas podem estar dispostas de forma a sugerir rotas alternativas ou desafios ocultos.
+- - Dificuldade Progressiva e Feedback Visual: À medida que o jogo avança, novos elementos de gameplay serão introduzidos de forma natural. O jogador enfrentará desafios mais difíceis conforme aprende e se adapta, sem a necessidade de explicações explícitas. Além disso, feedbacks visuais como a aproximação de inimigos para indicar perigo crescente ou o destaque de artefatos importantes ajudarão na orientação.
