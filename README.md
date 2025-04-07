@@ -21,4 +21,7 @@ Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário [FEI](
 - [Prototipação](./docs/7-prototipacao.md)
 - [Testes](./docs/8-testes.md)
 
+## Links 
+- [Overleaf](https://www.overleaf.com/8326548198ynnmfxnjprng#507410)
+- [Slides](https://docs.google.com/presentation/d/10XqSn4G3JmHDDumyvKThmeD4HGRRDSijG6dZyJ9zo-8/edit?usp=sharing)
 
