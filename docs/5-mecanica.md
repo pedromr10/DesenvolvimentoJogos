@@ -1,19 +1,9 @@
 ### Mecânica
 
-- Apresente os elementos formais do jogo
-    - Qual o padrão de interação do jogador?
-    - Qual o objetivo do jogo? 
-        - Quando o jogador ganha?
-        - Quando o jogador perde?
-    - Quais são as regrsas do jogo?
-    - Quais são os procedimentos do jogo?
-    - Quais os recursos do jogo?
-    - Quais os limites do jogo?
-    - Quais os resultados do jogo?
-        - Como ele termina depois da vitoria
-        - Como ele termina depois da derrota
-
-
 As mecânicas do jogo consistem no uso das teclas do teclado, permitindo que o jogo seja jogado inteiramente com ele. O jogador poderá se mover pelos cenários utilizando as teclas "W", "A", "S" e "D", que correspondem, respectivamente, aos movimentos para cima, esquerda, baixo e direita. Para pular obstáculos, basta pressionar a tecla "SpaceBar", e para atacar, o jogador utilizará a tecla "P", que permite realizar ataques à distância contra os inimigos. Com esses comandos, o jogador poderá enfrentar os três chefes principais e o chefe final, além de combater os inimigos que aparecerão nos cenários. O personagem de Death's Wish, Jean, terá umaum total de 3 vidas, ao chegar a zero, fará com que o protagonista morra e retorne ao último ponto alcançado. A cada chefe finalizado, será adicionado um item epecial ao inventário de Jean, que serão usados posteriormente pela Morte. Para garantir uma experiência fluida e sem interrupções, não haverá um tempo limite para concluir o jogo. O jogador poderá dedicar o tempo que julgar necessário para alcançar seus objetivos.
 
 O jogo tem como objetivo juntar os artefatos míticos que devem ser entregues para a Morte. O jogador perde ao ser derrotado por algum inimigo, seja ele inimigo comum, ou boss. Durante as fases, o jogador será orientado tanto de maneira direta quanto indireta quanto às regras e procedimentos, entendendo o que deve ser feito enquanto joga e se diverte. O jogo terá como recursos os inimigos, itens de cura, o cenário envolvente, além dos artefatos. Os limites físicos estarão representados por caminhos fechados e/ou não liberados, porém tentando evidenciar o maior senso de liberdade para o jogador. Ao completar a missão e derrotar a Morte, o jogo acaba com Jean continuando sua vida tranquila na fazenda. Caso o jogador seja derrotado, é informado que Jean morre e não completa a missão.
+
+Teremos dois principais recursos coletáveis:
+- Munição: Jean carregará no tambor de sua arma 5 balas, mas em seu inventário poderá carregar quantas quiser. Deve infringir 1 coração de dano em inimigos e bosses;
+- Poção de vida: estarão espalhadas pelo mapa e poderão curar um coração do jogador. Jean poderá carregar apenas um item de cura em seu inventário.
