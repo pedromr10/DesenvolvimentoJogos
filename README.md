@@ -11,7 +11,7 @@ Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário [FEI](
 - Rômulo Canavesso
 - Giovanne D. Montalvão
 
-# Versão utilizada da Unity2d: 
+## Versão utilizada da Unity2d: 
 2023.2.3f1, mesma versão utilizada em sala de aula.
 
 ## Tópicos
