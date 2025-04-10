@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f; 
-    public float jumpForce = 5f;  
-    private Rigidbody2D rb; 
+    public float moveSpeed = 5f;
+    public float jumpForce = 5f;
+    private Rigidbody2D rb;
 
-    private bool isGrounded;  
+    private bool isGrounded;
 
 
     void Start()
@@ -19,28 +19,39 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float moveInput = Input.GetAxisRaw("Horizontal");  
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y); 
+        float moveInput = Input.GetAxisRaw("Horizontal");
+
+        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);  
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        if (moveInput > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (moveInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))  
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true; 
+            isGrounded = true;
         }
     }
 
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground")) 
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false; 
+            isGrounded = false;
         }
     }
 }
