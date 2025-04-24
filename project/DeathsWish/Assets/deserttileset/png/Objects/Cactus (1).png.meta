@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cactus (1)_0: -6655039847038837658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
