@@ -9,11 +9,14 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private int maxHealth = 3;
     private int currentHealth;
+    private float jumpCooldown = 1f;
+    private float lastJump;
 
     void Start()
     {
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
+        lastJump = Time.time;
     }
 
 
@@ -23,9 +26,10 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded && lastJump < Time.time - jumpCooldown)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            lastJump = Time.time;
         }
 
         if (moveInput > 0)
