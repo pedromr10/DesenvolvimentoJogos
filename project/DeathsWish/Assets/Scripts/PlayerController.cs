@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
     private float jumpCooldown = 1f;
     private float lastJump;
 
+    //tiro:
+    public GameObject balaPrefab; 
+    public Transform pontoDisparo; 
+    public float velocidadeTiro = 10f;  
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -40,6 +45,21 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        if (Input.GetKeyDown(KeyCode.P))   
+        {
+            Atirar();
+        }
+    }
+
+    void Atirar()
+    {
+        GameObject bala = Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
+
+        Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
+
+        rb.velocity = new Vector2(transform.localScale.x * velocidadeTiro, 0f); 
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
