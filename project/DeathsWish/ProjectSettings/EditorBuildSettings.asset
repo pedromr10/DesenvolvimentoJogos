@@ -11,5 +11,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Medieval1.unity
     guid: a43297d2bf69be0458cf498dcdabc503
+  - enabled: 1
+    path: Assets/Scenes/Deserto_1.unity
+    guid: 2fbcd34f43b96a84ca931a7f38d31354
+  - enabled: 1
+    path: Assets/Scenes/Deserto_2.unity
+    guid: 5920ef70a4038cd4a8c4a1a4da5fabea
+  - enabled: 1
+    path: Assets/Scenes/Deserto_3.unity
+    guid: 561e8846d39534d479c06aaa1e00f14a
+  - enabled: 1
+    path: Assets/Scenes/Deserto_Boss.unity
+    guid: 4abeb248ae288c74981bb7906903728f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
