@@ -178,7 +178,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cactusAttackSpriteSheet_0: 8743708463442409831
+      cactusAttackSpriteSheet_1: 6360868319237492043
+      cactusAttackSpriteSheet_2: 7842718412938286398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 356d8cee8b5259e459c851ae0759a201
+guid: eed4e12c492d343b389786d02d23d2bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6785057084850276454
-    second: cactusAttackGif_0
+      213: -9221964393046447924
+    second: medievalPortal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cactusAttackGif_0
+      name: medievalPortal_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 54
+        y: 35
+        width: 392
+        height: 443
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9770c4b782a6d1a0800000000000000
-      internalID: -6785057084850276454
+      spriteID: cc86a2d9e30050080800000000000000
+      internalID: -9221964393046447924
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      cactusAttackGif_0: -6785057084850276454
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
