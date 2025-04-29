@@ -23,5 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Deserto_Boss.unity
     guid: 4abeb248ae288c74981bb7906903728f
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 6d0567fd4b721cf40884e78bdf714143
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
