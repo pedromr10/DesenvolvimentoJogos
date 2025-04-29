@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded;
     private int maxHealth = 3;
-    private int currentHealth;
+    public int currentHealth;
     private float jumpCooldown = 1f;
     private float lastJump;
 
@@ -93,5 +94,12 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         Debug.Log("Perdeu");
+        SceneManager.LoadScene("DeathScene");
+
+    }
+
+    public void Heal() {
+
+        currentHealth += 1;
     }
 }

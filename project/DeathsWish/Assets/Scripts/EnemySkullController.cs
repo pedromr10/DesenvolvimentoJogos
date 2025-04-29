@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemySkullController : MonoBehaviour
 {
-    int skullHealth = 1;
     public Transform pontoA;
     public Transform pontoB;
     public float velocidade = 2f;
@@ -48,6 +47,7 @@ public class EnemySkullController : MonoBehaviour
         }
         if (collision.CompareTag("Bullet"))
         {
+            Destroy(collision.gameObject);
             Destroy(gameObject);
         }
     }
