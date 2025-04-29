@@ -11,9 +11,9 @@ public class EnemyCactusController : MonoBehaviour
     // Variáveis de tiro
     public GameObject balaPrefab;
     public Transform pontoDisparo;
-    public float velocidadeTiro = 5f;
-    public float intervaloTiros = 2f; // Tempo entre tiros
-    public float distanciaDeteccao = 5f; // Distância máxima para detectar o player
+    private float velocidadeTiro = 3f;
+    private float intervaloTiros = 3f;
+    private float distanciaDeteccao = 5f; 
 
     private float tempoProximoTiro = 0f;
 
@@ -67,6 +67,6 @@ public class EnemyCactusController : MonoBehaviour
         Vector2 direcao = (player.position - pontoDisparo.position).normalized;
         rb.velocity = direcao * velocidadeTiro;
 
-        Destroy(bala, 5f); // Destrói a bala depois de 5 segundos
+        Destroy(bala, 5f); 
     }
 }
