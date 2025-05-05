@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyCactusController : MonoBehaviour
 {
     public Transform player;
+    private Animator animator;
     private int cactusLife = 1;
     private PlayerController playerController;
 
@@ -20,18 +21,20 @@ public class EnemyCactusController : MonoBehaviour
     void Start()
     {
         playerController = player.GetComponent<PlayerController>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         float distanciaParaPlayer = Vector2.Distance(transform.position, player.position);
-
+        animator.SetBool("atirou", false);
         if (distanciaParaPlayer <= distanciaDeteccao)
         {
             if (Time.time >= tempoProximoTiro)
             {
                 Atirar();
                 tempoProximoTiro = Time.time + intervaloTiros;
+
             }
         }
     }
@@ -66,6 +69,8 @@ public class EnemyCactusController : MonoBehaviour
 
         Vector2 direcao = (player.position - pontoDisparo.position).normalized;
         rb.velocity = direcao * velocidadeTiro;
+
+        animator.SetBool("atirou", true);
 
         Destroy(bala, 5f); 
     }
