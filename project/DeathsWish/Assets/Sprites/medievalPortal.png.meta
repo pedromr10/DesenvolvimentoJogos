@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medievalPortal_0: -9221964393046447924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
