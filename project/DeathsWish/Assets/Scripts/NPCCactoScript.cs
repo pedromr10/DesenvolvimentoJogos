@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Importa o TextMeshPro
+using TMPro; 
 
 public class NPCCactoScript : MonoBehaviour
 {
-    public GameObject interactionUI;       // Texto "Pressione E para falar"
-    public GameObject dialogUI;            // Painel de diálogo
-    public TextMeshProUGUI dialogText;     // Texto do diálogo (agora usando TextMeshPro)
+    public GameObject interactionUI;       
+    public GameObject dialogUI;            
+    public TextMeshProUGUI dialogText;   
 
     private bool isPlayerNear = false;
     private bool isDialogActive = false;
