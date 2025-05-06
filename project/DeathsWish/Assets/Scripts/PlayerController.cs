@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     private Rigidbody2D rb;
+    private Animator animator;
 
     private bool isGrounded;
     private int maxHealth = 3;
@@ -23,11 +24,13 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
         lastJump = Time.time;
+        animator = GetComponent<Animator>();
     }
 
 
     void Update()
     {
+        
         float moveInput = Input.GetAxisRaw("Horizontal");
 
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
@@ -40,17 +43,31 @@ public class PlayerController : MonoBehaviour
 
         if (moveInput > 0)
         {
+            
             transform.localScale = new Vector3(1, 1, 1);
+            
         }
         else if (moveInput < 0)
         {
+            
             transform.localScale = new Vector3(-1, 1, 1);
+           
+        }
+        if (moveInput != 0)
+        {
+            animator.SetBool("isWalk", true);
+            
+        }
+        else
+        {
+            animator.SetBool("isWalk", false);
         }
 
         if (Input.GetKeyDown(KeyCode.P))   
         {
             Atirar();
         }
+        
     }
 
     void Atirar()

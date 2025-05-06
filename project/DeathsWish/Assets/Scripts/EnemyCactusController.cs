@@ -64,13 +64,14 @@ public class EnemyCactusController : MonoBehaviour
 
     void Atirar()
     {
+        animator.SetBool("atirou", true);
         GameObject bala = Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
         Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
 
         Vector2 direcao = (player.position - pontoDisparo.position).normalized;
         rb.velocity = direcao * velocidadeTiro;
 
-        animator.SetBool("atirou", true);
+        
 
         Destroy(bala, 5f); 
     }

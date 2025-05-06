@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9147362668472050753}
   - component: {fileID: 4437759634116629962}
   - component: {fileID: 1133052317141931150}
+  - component: {fileID: 7388571131453392459}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -180,3 +181,25 @@ MonoBehaviour:
   balaPrefab: {fileID: 0}
   pontoDisparo: {fileID: 0}
   velocidadeTiro: 10
+--- !u!95 &7388571131453392459
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774234798614843342}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2090e14816e2073448296e889107676c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
