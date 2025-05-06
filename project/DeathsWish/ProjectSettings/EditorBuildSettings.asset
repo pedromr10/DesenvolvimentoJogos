@@ -29,5 +29,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScene.unity
     guid: 6d0567fd4b721cf40884e78bdf714143
+  - enabled: 1
+    path: Assets/Scenes/Fazenda_1.unity
+    guid: 4f1176131dcd8b94eb6399b80a4e0125
+  - enabled: 1
+    path: Assets/Scenes/Fazenda_2.unity
+    guid: b858e20972b217f42904415081d6d06f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

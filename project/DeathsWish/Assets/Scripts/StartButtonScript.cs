@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class StartButtonScript : MonoBehaviour
 {
     public void StartButtonFunction() {
-        SceneManager.LoadScene("Deserto_1");
+        SceneManager.LoadScene("Fazenda_1");
     }
 }
