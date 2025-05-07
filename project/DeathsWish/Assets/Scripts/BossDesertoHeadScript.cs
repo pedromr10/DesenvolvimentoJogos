@@ -3,7 +3,7 @@ using UnityEngine;
 public class BossDesertoHeadScript : MonoBehaviour
 {
     public Transform player;  
-    private float followSpeed = 2f;  
+    private float followSpeed = 0.5f;  
 
     void Update()
     {
