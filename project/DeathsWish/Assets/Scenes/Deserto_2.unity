@@ -14037,6 +14037,10 @@ PrefabInstance:
       propertyPath: pontoDisparo
       value: 
       objectReference: {fileID: 952976172}
+    - target: {fileID: 2299019875468647818, guid: a080a9b5ea2905c43ac71c47652cd81a, type: 3}
+      propertyPath: m_Volume
+      value: 0.27
+      objectReference: {fileID: 0}
     - target: {fileID: 3041335040302626296, guid: a080a9b5ea2905c43ac71c47652cd81a, type: 3}
       propertyPath: m_Name
       value: cactus

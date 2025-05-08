@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 7
-  currentHealth: 0
+  currentHealth: -1
   balaPrefab: {fileID: 0}
   pontoDisparo: {fileID: 0}
   velocidadeTiro: 10
@@ -218,7 +218,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c32d43e3ffb8285429c9758bfe397e1d, type: 3}
   m_Resource: {fileID: 8300000, guid: c32d43e3ffb8285429c9758bfe397e1d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.265
+  m_Volume: 0.188
   m_Pitch: 1
   Loop: 0
   Mute: 0

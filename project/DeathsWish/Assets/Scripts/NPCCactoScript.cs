@@ -11,20 +11,7 @@ public class NPCCactoScript : MonoBehaviour
     private bool isPlayerNear = false;
     private bool isDialogActive = false;
     private int dialogIndex = 0;
-    /*
-    private string[] dialogLines = {
-        "Fala aí meu mano!",
-        "Você tem que tomar",
-        "cuidado com esses", 
-        "caras, eles são",
-        "barra pesada!", 
-        "Mas fica de boa",
-        "que não sou igual eles",
-        "não! Eles atiram",
-        "espinhos envenenados",
-        "que te matam na hora!"
-    };
-    */
+
     private string[] dialogLines = {
         "Fala aí meu mano!",
         "Você tem que tomar cuidado com esses caras!",
@@ -33,6 +20,14 @@ public class NPCCactoScript : MonoBehaviour
         "Ai vai uma dica...",
         "Eles atiram espinhos ENVENENADOS que te matam na hora!"
     };
+
+    private AudioSource audioSource;
+    public AudioClip tiroClip;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -51,6 +46,7 @@ public class NPCCactoScript : MonoBehaviour
 
     void StartDialog()
     {
+        audioSource.PlayOneShot(tiroClip);
         isDialogActive = true;
         dialogIndex = 0;
         dialogUI.SetActive(true);

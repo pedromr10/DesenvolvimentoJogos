@@ -17,11 +17,14 @@ public class EnemyCactusController : MonoBehaviour
     private float distanciaDeteccao = 5f; 
 
     private float tempoProximoTiro = 0f;
+    private AudioSource audioSource;
+    public AudioClip tiroClip;
 
     void Start()
     {
         playerController = player.GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -64,6 +67,7 @@ public class EnemyCactusController : MonoBehaviour
 
     void Atirar()
     {
+        audioSource.PlayOneShot(tiroClip);
         animator.SetBool("atirou", true);
         GameObject bala = Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
         Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
