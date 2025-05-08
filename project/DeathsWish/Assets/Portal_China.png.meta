@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Portal_China_0: 3786380705469591280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
