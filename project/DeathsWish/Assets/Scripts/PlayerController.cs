@@ -17,7 +17,11 @@ public class PlayerController : MonoBehaviour
     //tiro:
     public GameObject balaPrefab; 
     public Transform pontoDisparo; 
-    public float velocidadeTiro = 10f;  
+    public float velocidadeTiro = 10f;
+    private AudioSource audioSource;
+    public AudioClip tiroClip;
+
+
 
     void Start()
     {
@@ -25,6 +29,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         lastJump = Time.time;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -65,6 +70,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))   
         {
+            audioSource.PlayOneShot(tiroClip);
             Atirar();
         }
         
@@ -72,6 +78,7 @@ public class PlayerController : MonoBehaviour
 
     void Atirar()
     {
+        
         GameObject bala = Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
 
         Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
