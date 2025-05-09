@@ -1,65 +1,53 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyKnightController : MonoBehaviour
 {
+    public Transform pontoA;
+    public Transform pontoB;
+    public float velocidade = 2f;
+    private Transform alvoAtual;
     public Transform player;
-    public float speed = 3f;
-    public float minDistance = 1.5f;
-    public float damageCooldown = 1f;
+    private PlayerController playerController;
 
-    private Rigidbody2D rb;
-    private float lastDamageTime;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        lastDamageTime = -damageCooldown;
+        alvoAtual = pontoA;
+        playerController = player.GetComponent<PlayerController>();
+    }
 
-        if (player == null)
+    void Update()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, alvoAtual.position, velocidade * Time.deltaTime);
+        if (Vector2.Distance(transform.position, alvoAtual.position) < 0.1f)
         {
-            GameObject playerGO = GameObject.FindGameObjectWithTag("Player");
-
-            if (playerGO != null)
+            if (alvoAtual == pontoA)
             {
-                player = playerGO.transform;
+                alvoAtual = pontoB;
             }
+
+            else
+            {
+                alvoAtual = pontoA;
+            }
+
+            Vector3 escala = transform.localScale;
+            escala.x *= -1;
+            transform.localScale = escala;
         }
     }
 
-    void FixedUpdate()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (player != null)
+        if (collision.CompareTag("Player"))
         {
-            float distance = Vector2.Distance(transform.position, player.position);
-
-            if (distance > minDistance)
-            {
-                Vector2 direction = new Vector2(player.position.x - transform.position.x, 0).normalized;
-                Vector2 newPos = rb.position + direction * speed * Time.fixedDeltaTime;
-                rb.MovePosition(newPos);
-            }
-            else
-            {
-                if (Time.time - lastDamageTime >= damageCooldown)
-                {
-                    PlayerController playerController = player.GetComponent<PlayerController>();
-                    if (playerController != null)
-                    {
-                        playerController.TakeDamage();
-                        lastDamageTime = Time.time;
-                    }
-                }
-            }
-
-            if (player.position.x > transform.position.x)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-            else
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-            }
+            Debug.Log("dano");
+            playerController.TakeDamage();
+        }
+        if (collision.CompareTag("Bullet"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
