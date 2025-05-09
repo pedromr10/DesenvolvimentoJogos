@@ -9,7 +9,8 @@
     - A Morte, que se apresentará para Jean e iniciará sua jornada.
     - Os inimigos são criaturas sobrenaturais enviadas pela Morte para testar Jean. Tais inimigos devem atacar Jean assim que o encontrarem, buscando impedir seu avanço. Temos três tipos de inimigos para cada chefão, sendo eles:
         - Samurais morto-vivos: Guerreiros do Mundo Mitológico Chinês que tentarão impedir que Jean encontre o bastão do ser mitológico chinês, Sun Wukong.
-        - Guerreiros Medjai: Guerreiros de elite egípcios ressuscitados que tentarão impedir que Jean ache as bandagens do seu antigo Faraó, que agora é uma múmia sagrada.
+        - Cabeça Oca: um dos inimigos mais fracos de Jean. Possui apenas uma vida e, apesar de ter olhos vermelhos, são cegos e, por isso, vagam sem rumo.
+        - Cactus: inimigo fatal. Possui espinhos que, ao toque, causam dano a Jean e atira balas de espinho envenenados que o aniquilam instantaneamente. Além disso, possui duas vidas.
         - Cavaleiros do Rei Arthur: Cavalaria do Rei Arthur, que tentará impedir que Jean consiga a lâmina da espada de Rei Arthur.
     - Sun Wukong, chefe da fase Mundo Mitológico Chinês, tentará impedir que Jean tome seu bastão.
     - Múmia sagrada, chefe da fase Egito Antigo, tentará impedir que Jean consiga as bandagens míticas.
