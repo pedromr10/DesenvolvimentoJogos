@@ -13,9 +13,10 @@
         - Cactus: inimigo fatal. Possui espinhos que, ao toque, causam dano a Jean e atira balas de espinho envenenados que o aniquilam instantaneamente. Além disso, possui duas vidas.
         - Cavaleiros do Rei Arthur: Cavalaria do Rei Arthur, que tentará impedir que Jean consiga a lâmina da espada de Rei Arthur.
     - Sun Wukong, chefe da fase Mundo Mitológico Chinês, tentará impedir que Jean tome seu bastão.
-    - Múmia sagrada, chefe da fase Egito Antigo, tentará impedir que Jean consiga as bandagens míticas.
+    - Seth-Ra, chefe da fase Egito Antigo, tentará impedir que Jean consiga as bandagens míticas.
     - Rei Arthur, chefe da fase Inglaterra de Rei Arthur, tentará impedir que Jean consiga a lâmina de sua espada.
-    - Jean não encontrará aliados ao longo da história, terá que, sozinho, superar os desafios e encontrar os artefatos exigidos pela Morte.
+    - Jean encontrará um NPC, o Cactus Bacana, que após ser reprovado na academia de malfeitores por ser muito carismático, decidiu ajudar o personagem principal para se vingar, dando dicas de como enfrentar seus colegas.
+
 - História
 O jogo se passa em um mundo de plataforma 2D em pixel art, com cenários variados e dinâmicos. À medida que Jean avança no desafio da Morte, os ambientes se transformam, refletindo a progressão da história e a crescente dificuldade. Os ambientes são, a partir da escolha do jogadoro: Mundo Mitológico Chinês, Egito Antigo, Inglaterra de Rei Arthur. No início do jogo, fase inicial obrigatória, a Morte apresentará para Jean o seu desafio e o que deve fazer para completá-lo, junto com um simples tutorial para o jogador. Feito isso, será aberto um portal para o desafio escolhido:
 - O Mundo Mitológico Chinês. Nessa nova fase, o jogador deverá derrotar inimigos e encontrar o misterioso Sun Wukong, derrotando-o para conseguir seu bastão, um dos itens pedidos pela Morte.
