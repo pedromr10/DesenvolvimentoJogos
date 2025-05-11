@@ -178,8 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 7
-  currentHealth: -1
-  balaPrefab: {fileID: 0}
+  currentHealth: 3
+  balaPrefab: {fileID: 4066108191462186929, guid: a26210cf7f602944ca3c47e8bf504176, type: 3}
   pontoDisparo: {fileID: 0}
   velocidadeTiro: 10
   tiroClip: {fileID: 8300000, guid: c32d43e3ffb8285429c9758bfe397e1d, type: 3}

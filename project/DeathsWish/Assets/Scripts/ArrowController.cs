@@ -1,44 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Arrow : MonoBehaviour
+public class ArrowController : MonoBehaviour
 {
-    [Header("Settings")]
-    public int damage = 1;
-    public float lifetime = 3f;
-    public bool destroyOnAnyCollision = true;
-
-    [Header("Components")]
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Collider2D arrowCollider;
-
+    private PlayerController playerController;
+    private Rigidbody2D rb;
     void Start()
     {
-        Destroy(gameObject, lifetime);
-
-        if (rb == null) rb = GetComponent<Rigidbody2D>();
-        if (arrowCollider == null) arrowCollider = GetComponent<Collider2D>();
+        rb = GetComponent<Rigidbody2D>();
+        playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void Update()
     {
-        PlayerController player = collision.GetComponent<PlayerController>();
-
-        if (player != null)
+        if (rb.velocity != Vector2.zero)
         {
-            player.TakeDamage();
-            Destroy(gameObject);
-        }
-        else if (destroyOnAnyCollision)
-        {
-            Destroy(gameObject);
+            float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
 
-    public void Initialize(Vector2 velocity)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (rb != null)
+        Debug.Log("Colidiu com: " + collision.gameObject.name);
+        if (collision.gameObject.CompareTag("Player"))
         {
-            rb.velocity = velocity;
+            Destroy(gameObject);
+            playerController.TakeDamage();
+
         }
     }
 }

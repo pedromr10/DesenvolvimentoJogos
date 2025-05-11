@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
     private float lastJump;
 
     //tiro:
-    public GameObject balaPrefab; 
-    public Transform pontoDisparo; 
+    public GameObject balaPrefab;
+    public Transform pontoDisparo;
     public float velocidadeTiro = 10f;
     private AudioSource audioSource;
     public AudioClip tiroClip;
@@ -32,10 +32,15 @@ public class PlayerController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    void OnEnable()
+    {
+        currentHealth = maxHealth;
+    }
+
 
     void Update()
     {
-        
+
         float moveInput = Input.GetAxisRaw("Horizontal");
 
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
@@ -48,42 +53,42 @@ public class PlayerController : MonoBehaviour
 
         if (moveInput > 0)
         {
-            
+
             transform.localScale = new Vector3(1, 1, 1);
-            
+
         }
         else if (moveInput < 0)
         {
-            
+
             transform.localScale = new Vector3(-1, 1, 1);
-           
+
         }
         if (moveInput != 0)
         {
             animator.SetBool("isWalk", true);
-            
+
         }
         else
         {
             animator.SetBool("isWalk", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.P))   
+        if (Input.GetKeyDown(KeyCode.P))
         {
             audioSource.PlayOneShot(tiroClip);
             Atirar();
         }
-        
+
     }
 
     void Atirar()
     {
-        
+
         GameObject bala = Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
 
         Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
 
-        rb.velocity = new Vector2(transform.localScale.x * velocidadeTiro, 0f); 
+        rb.velocity = new Vector2(transform.localScale.x * velocidadeTiro, 0f);
 
     }
 
@@ -122,7 +127,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void Heal() {
+    public void Heal()
+    {
 
         currentHealth += 1;
     }

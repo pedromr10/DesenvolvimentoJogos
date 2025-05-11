@@ -1,62 +1,74 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Archer : MonoBehaviour
+public class EnemyArcherController : MonoBehaviour
 {
-    [Header("Shooting Settings")]
-    public Transform firePoint;
-    public GameObject arrowPrefab;
-    public float arrowForce = 1f;
-    public float shootCooldown = 2f;
+    public Transform player;
+    private int cactusLife = 1;
+    private PlayerController playerController;
 
-    [Header("Detection")]
-    public float detectionRange = 10f;
-    public LayerMask playerLayer;
+    // Vari�veis de tiro
+    public GameObject balaPrefab;
+    public Transform pontoDisparo;
+    private float velocidadeTiro = 5f;
+    private float intervaloTiros = 2f;
+    private float distanciaDeteccao = 10f;
 
-    private float cooldownTimer;
-    private Transform player;
-    private Camera mainCamera;
-    private Renderer archerRenderer;
+    private float tempoProximoTiro = 0f;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        mainCamera = Camera.main;
-        archerRenderer = GetComponent<Renderer>();
-        cooldownTimer = shootCooldown;
+        playerController = player.GetComponent<PlayerController>();
     }
 
     void Update()
     {
-        if (!IsVisibleOnCamera()) return;
-
-        cooldownTimer -= Time.deltaTime;
-
-        if (PlayerInRange() && cooldownTimer <= 0f)
+        float distanciaParaPlayer = Vector2.Distance(transform.position, player.position);
+        if (distanciaParaPlayer <= distanciaDeteccao)
         {
-            Shoot();
-            cooldownTimer = shootCooldown;
+            if (Time.time >= tempoProximoTiro)
+            {
+                Atirar();
+                tempoProximoTiro = Time.time + intervaloTiros;
+
+            }
         }
     }
 
-    bool IsVisibleOnCamera()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        return archerRenderer.isVisible;
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("dano");
+            playerController.TakeDamage();
+        }
+
+        if (collision.CompareTag("Bullet"))
+        {
+            Destroy(collision.gameObject);
+
+            if (cactusLife < 1)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                cactusLife -= 1;
+            }
+        }
     }
 
-    bool PlayerInRange()
+    void Atirar()
     {
-        return Vector2.Distance(transform.position, player.position) <= detectionRange;
-    }
+        GameObject bala = Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
+        Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
 
-    void Shoot()
-    {
-        GameObject arrow = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
+        Vector2 direcao = (player.position - pontoDisparo.position).normalized;
+        rb.velocity = direcao * velocidadeTiro;
 
-        Vector2 direction = (player.position - firePoint.position).normalized;
-        rb.AddForce(direction * arrowForce, ForceMode2D.Impulse);
 
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        arrow.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        Destroy(bala, 10f);
     }
 }

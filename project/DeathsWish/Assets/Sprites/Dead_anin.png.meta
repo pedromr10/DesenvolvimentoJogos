@@ -778,7 +778,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dead_anin_0: 2752677570131296368
+      Dead_anin_1: -7187084846988961743
+      Dead_anin_10: 5124926992236636417
+      Dead_anin_11: 1000333006922845547
+      Dead_anin_12: -1645935973408497199
+      Dead_anin_13: -3253863016195834924
+      Dead_anin_14: 8183292479567515952
+      Dead_anin_15: -8619923052201247513
+      Dead_anin_16: -3402265599394419889
+      Dead_anin_17: 3114681970631962110
+      Dead_anin_18: -6464723349712112127
+      Dead_anin_19: 2459211277210418402
+      Dead_anin_2: -8162589282257595919
+      Dead_anin_20: -5243863554896055227
+      Dead_anin_21: 6739011637104703514
+      Dead_anin_22: 7767110605308991889
+      Dead_anin_23: 5891360408502130973
+      Dead_anin_24: -6452175034975169088
+      Dead_anin_25: -8175452489565908074
+      Dead_anin_26: 8906382540693621786
+      Dead_anin_27: 2729055203640343324
+      Dead_anin_3: -8958642717688696281
+      Dead_anin_4: 7254148425116814026
+      Dead_anin_5: -8209734605134524516
+      Dead_anin_6: -7676274545486798449
+      Dead_anin_7: -1757602260115192587
+      Dead_anin_8: -3965076857344461726
+      Dead_anin_9: 8087239275314989009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
