@@ -17,7 +17,6 @@ public class MedievalPortal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("eun");
         if (collision.CompareTag("Player"))
         {
             if (cenaAtual.name == "Medieval1")

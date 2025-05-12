@@ -3,8 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class SpikeDamage : MonoBehaviour
 {
-    [Header("Damage Settings")]
-    [SerializeField] private float invulnerabilityTime = 1f;
 
     [Header("Player Reference")]
     public Transform player;

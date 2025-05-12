@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/China1.unity
     guid: a039e2fe38f34dc4a9dd733fe911e60a
   - enabled: 1
+    path: Assets/Scenes/Medieval3.unity
+    guid: a47295465e1304c82857dd376a41320b
+  - enabled: 1
     path: Assets/Scenes/China2.unity
     guid: 30893bd9f8fadaf44a3acbd6932b390e
   - enabled: 1
