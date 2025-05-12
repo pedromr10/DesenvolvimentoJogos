@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  enemyLifes: 50
   player: {fileID: 521417011}
 --- !u!1001 &493226914
 PrefabInstance:

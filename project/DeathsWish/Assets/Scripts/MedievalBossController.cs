@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MedievalBossController : MonoBehaviour
 {
     public float moveSpeed = 3f;
+    public int enemyLifes = 50;
     public Transform player;
 
     private Rigidbody2D rb;
-    private int enemyLifes = 50;
 
     private void Awake()
     {
@@ -64,6 +65,7 @@ public class MedievalBossController : MonoBehaviour
             }
             else
             {
+                SceneManager.LoadScene("TransicaoMedievalFazenda");
                 Destroy(gameObject);
             }
         }
