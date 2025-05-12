@@ -43,7 +43,7 @@ public class MorteController : MonoBehaviour
             GameObject onda = Instantiate(prefabOnda, pontoDeSpawn.position, Quaternion.identity);
 
             // A onda deve seguir a direção para frente (ou para o player)
-            Vector2 direcao = transform.localScale.x > 0 ? Vector2.left : Vector2.right;
+            Vector2 direcao = transform.localScale.x > 0 ? Vector2.left : Vector2.right;            
 
             onda.GetComponent<OndaDeAtaque>().direcao = direcao;
         }
