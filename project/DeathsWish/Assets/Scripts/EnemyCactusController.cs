@@ -6,10 +6,10 @@ public class EnemyCactusController : MonoBehaviour
 {
     public Transform player;
     private Animator animator;
-    private int cactusLife = 1;
+    private int cactusLife = 2;
     private PlayerController playerController;
 
-    // Variáveis de tiro
+    // Variï¿½veis de tiro
     public GameObject balaPrefab;
     public Transform pontoDisparo;
     private float velocidadeTiro = 3f;

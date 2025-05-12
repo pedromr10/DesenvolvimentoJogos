@@ -6,7 +6,7 @@ public class BossDesertoMaoEsquerda : MonoBehaviour
 {
     public Transform player;
     private PlayerController playerController;
-    private int vidaMaoEsquerda = 3;
+    private int vidaMaoEsquerda = 7;
     void Start()
     {
         playerController = player.GetComponent<PlayerController>();

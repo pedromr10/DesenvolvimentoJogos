@@ -50,5 +50,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/China3.unity
     guid: e2ee663b3b799e541a30e511fb0b3552
+  - enabled: 1
+    path: Assets/Scenes/TransicaoDeserto_China.unity
+    guid: dec267c139fd0ab43aeb29f8e7956803
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

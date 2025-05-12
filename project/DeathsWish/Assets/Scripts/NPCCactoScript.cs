@@ -13,12 +13,12 @@ public class NPCCactoScript : MonoBehaviour
     private int dialogIndex = 0;
 
     private string[] dialogLines = {
-        "Fala aí meu mano!",
-        "Você tem que tomar cuidado com esses caras!",
-        "Eles são barra pesada!",
-        "Mas fica de boa que não sou igual eles!",
+        "Fala ai meu mano!",
+        "Voce tem que tomar cuidado com esses caras!",
+        "Eles sao barra pesada!",
+        "Mas fica de boa que nao sou igual eles!",
         "Ai vai uma dica...",
-        "Eles atiram espinhos ENVENENADOS que te matam na hora!"
+        "Eles nÃ£o morrem com apenas um tiro."
     };
 
     private AudioSource audioSource;
