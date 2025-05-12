@@ -31,6 +31,10 @@ public class MedievalPortal : MonoBehaviour
             {
                 SceneManager.LoadScene("MedievalBoss");
             }
+            else if (cenaAtual.name == "MedievalBoss")
+            {
+                SceneManager.LoadScene("Fazenda_2");
+            }
         }
     }
 

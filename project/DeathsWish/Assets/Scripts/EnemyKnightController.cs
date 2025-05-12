@@ -8,6 +8,7 @@ public class EnemyKnightController : MonoBehaviour
     private Transform alvoAtual;
     public Transform player;
     private PlayerController playerController;
+    private int enemyLifes = 5;
 
 
     void Start()
@@ -47,7 +48,15 @@ public class EnemyKnightController : MonoBehaviour
         if (collision.CompareTag("Bullet"))
         {
             Destroy(collision.gameObject);
-            Destroy(gameObject);
+
+            if (enemyLifes > 1)
+            {
+                enemyLifes -= 1;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
