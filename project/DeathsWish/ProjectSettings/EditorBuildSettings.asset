@@ -59,5 +59,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TransicaoChinaMedieval.unity
     guid: c0ecc61a121f83342b92f68cf907f61d
+  - enabled: 1
+    path: Assets/Scenes/CutsceneAbertura.unity
+    guid: 9d1599e144b15a74e9005c4faa9c2975
+  - enabled: 1
+    path: Assets/Scenes/CutsceneMeioJogo.unity
+    guid: 33f75277ccf652c4394fef2d39c0b24b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
