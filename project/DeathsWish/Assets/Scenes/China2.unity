@@ -768,7 +768,7 @@ PrefabInstance:
     - target: {fileID: 2243068995879650149, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1414488280}
     - target: {fileID: 2848946998169742942, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: m_GravityScale
       value: 0
@@ -924,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 2243068995879650149, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1414488280}
     - target: {fileID: 2848946998169742942, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: m_GravityScale
       value: 0
@@ -1080,7 +1080,7 @@ PrefabInstance:
     - target: {fileID: 2243068995879650149, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1414488280}
     - target: {fileID: 3876666559885548933, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.9
@@ -4816,7 +4816,7 @@ PrefabInstance:
     - target: {fileID: 2243068995879650149, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1414488280}
     - target: {fileID: 3876666559885548933, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.9
@@ -5187,7 +5187,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.012500048, y: 0.044399977, z: 10}
-  m_LocalScale: {x: 1.68039, y: 1.91571, z: 1}
+  m_LocalScale: {x: 2.55, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 80053818}
@@ -5410,7 +5410,7 @@ PrefabInstance:
     - target: {fileID: 2243068995879650149, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1414488280}
     - target: {fileID: 2848946998169742942, guid: bf07e45897079164d9c8a2d61ba13fb6, type: 3}
       propertyPath: m_GravityScale
       value: 0

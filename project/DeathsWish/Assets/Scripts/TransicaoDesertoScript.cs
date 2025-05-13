@@ -21,6 +21,10 @@ public class TransicaoDesertoScript : MonoBehaviour
                 SceneManager.LoadScene("China1");
 
             }
+            else if (scene == "TransicaoChinaMedieval")
+            {
+                SceneManager.LoadScene("Medieval1");
+            }
             else if (scene == "TransicaoMedievalFazenda")
             {
                 SceneManager.LoadScene("Fazenda_2");
