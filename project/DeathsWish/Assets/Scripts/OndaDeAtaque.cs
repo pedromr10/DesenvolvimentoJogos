@@ -45,7 +45,7 @@ public class OndaDeAtaque : MonoBehaviour
 {
     public Vector2 direcao;
     public float velocidade = 5f;
-    public int dano = 10; // Valor do dano que será aplicado
+    public int dano = 10;
 
     void Update()
     {
@@ -56,14 +56,14 @@ public class OndaDeAtaque : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Tenta acessar o script do jogador e aplicar dano
+            
             var player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
                 player.TakeDamage();
             }
 
-            Destroy(gameObject); // Destroi a onda após o impacto
+            Destroy(gameObject);
         }
     }
 }
