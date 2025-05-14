@@ -6,6 +6,8 @@ public class portal_china : MonoBehaviour
 {
     
     private Scene cenaAtual;
+    public static bool ChinaSecreto = false;
+    bananaScript bananaScript;
     void Start()
     {
         cenaAtual = SceneManager.GetActiveScene();
@@ -30,7 +32,14 @@ public class portal_china : MonoBehaviour
             }
             else if (cenaAtual.name == "China3")
             {
-                SceneManager.LoadScene("ChinaBoss");
+                if (ChinaSecreto){
+                    Debug.Log("entrou");
+                    SceneManager.LoadScene("ChinaBoss2");    
+                }
+                else{
+                    SceneManager.LoadScene("ChinaBoss");
+                }
+                
             }
         }
     }

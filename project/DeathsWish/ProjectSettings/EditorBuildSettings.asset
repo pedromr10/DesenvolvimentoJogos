@@ -71,5 +71,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChinaBoss.unity
     guid: 1ddc49567de1ae24cafeb9a481c5d255
+  - enabled: 1
+    path: Assets/Scenes/ChinaBoss2.unity
+    guid: cd6e8d46b547b214ab2ad943a872a57c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
