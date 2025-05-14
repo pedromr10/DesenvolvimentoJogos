@@ -27,7 +27,7 @@ public class TransicaoDesertoScript : MonoBehaviour
             }
             else if (scene == "TransicaoMedievalFazenda")
             {
-                SceneManager.LoadScene("Fazenda_2");
+                SceneManager.LoadScene("CutsceneMeioJogo");
             }
         }
 

@@ -7,18 +7,17 @@ public class BulletController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Colidiu com: " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);

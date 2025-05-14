@@ -23,7 +23,6 @@ public class ArrowController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Colidiu com: " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);

@@ -42,7 +42,6 @@ public class EnemyKnightController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("dano");
             playerController.TakeDamage();
         }
         if (collision.CompareTag("Bullet"))

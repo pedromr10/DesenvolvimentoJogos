@@ -61,6 +61,7 @@ public class MedievalBossController : MonoBehaviour
 
             if (enemyLifes > 1)
             {
+                Debug.Log("Rei Arthur atingida! Vida restante: " + enemyLifes);
                 enemyLifes -= 1;
             }
             else

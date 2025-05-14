@@ -40,7 +40,6 @@ public class EnemyArcherController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("dano");
             playerController.TakeDamage();
         }
 
