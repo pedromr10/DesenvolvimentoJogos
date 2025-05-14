@@ -65,7 +65,7 @@ public class MorteController : MonoBehaviour
     private Animator animator;
     private float tempoUltimoAtaque = 0f;
 
-    private int vida = 20;
+    private int vida = 50;
 
     void Start()
     {

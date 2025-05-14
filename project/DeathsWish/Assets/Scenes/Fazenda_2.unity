@@ -3247,7 +3247,7 @@ MonoBehaviour:
   pontoDeSpawn: {fileID: 721896997}
   jogador: {fileID: 337435504}
   distanciaAtaque: 10
-  tempoEntreAtaques: 2
+  tempoEntreAtaques: 1.5
 --- !u!50 &820382797
 Rigidbody2D:
   serializedVersion: 4
