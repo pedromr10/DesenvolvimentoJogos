@@ -863,7 +863,7 @@ MonoBehaviour:
   - {fileID: 1955329985}
   - {fileID: 1777207580}
   fadePanel: {fileID: 454239716}
-  tempoPorImagem: 9
+  tempoPorImagem: 8
   tempoFade: 0.6
 --- !u!4 &1559032298
 Transform:
