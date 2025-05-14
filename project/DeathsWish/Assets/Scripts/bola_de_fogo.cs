@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class bola_de_fogo : MonoBehaviour
 {
-    public Transform player;
     private PlayerController playerController;
+    private Rigidbody2D rb;
     void Start()
     {
-        playerController = player.GetComponent<PlayerController>();
+        rb = GetComponent<Rigidbody2D>();
+        playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (rb.velocity != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
     }
-    
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Colidiu com: " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
             playerController.TakeDamage();
-            
+
         }
     }
 }

@@ -68,5 +68,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutsceneFinal.unity
     guid: 88b90fa6e99ad8b4982801c9fbc810e8
+  - enabled: 1
+    path: Assets/Scenes/ChinaBoss.unity
+    guid: 1ddc49567de1ae24cafeb9a481c5d255
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
