@@ -639,7 +639,7 @@ MonoBehaviour:
   - {fileID: 1786376508}
   - {fileID: 1331909390}
   fadePanel: {fileID: 32932999}
-  tempoPorImagem: 8
+  tempoPorImagem: 6
   tempoFade: 0.6
   proximaCena: NomeDaProximaCena
 --- !u!4 &1777897792
